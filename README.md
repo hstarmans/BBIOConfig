@@ -5,6 +5,22 @@ https://github.com/cdsteinkuehler/beaglebone-universal-io
 
 ![Alt text](/doc/snapshot.png "The editor")
 
+## Building
+You need to install the following dependencies;
+```
+sudo apt install build-essential qtcreator qt5-default qtdeclarative5-dev
+qml-module-qt-labs-settings qml-module-qt-labs-folderlistmodel
+```
+Run qmake and then make, i.e.;
+```
+qmake BBIOConfig.pro
+make
+```
+Program should then run with
+```
+./bbioconfig
+```
+
 ## Using BBIOConfig
 To use BBIOConfig you will need a very recent Debian BB image with the config-pin utility installed. In case you don't have such an image installed on you Beagle Bone please download install the BB universal IO from here: https://github.com/cdsteinkuehler/beaglebone-universal-io
 
